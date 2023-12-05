@@ -1,0 +1,99 @@
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(0, 212, 255, 1) 0%, rgba(73, 9, 121, 1) 62%, rgba(2, 0, 36, 1) 100%);
+    margin: 0;
+    font-family: Poppins, sans-serif;
+}
+
+#form {
+    max-width: 800px;
+    margin: 20vh auto 20vh auto;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+h1 {
+    text-align: left;
+
+}
+
+label {
+    font-weight: bold;
+}
+
+#form button {
+    background: linear-gradient(90deg, rgba(0, 212, 255, 1) 0%, rgba(73, 9, 121, 1) 62%, rgba(2, 0, 36, 1) 100%);
+    color: white;
+    border: 1px solid #632493;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px 0px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 100%;
+}
+
+.input-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    flex-basis: calc(50% - 10px);
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #632493;
+    width: 90%;
+}
+
+.input-group input:focus {
+    outline: 1px solid blue;
+}
+
+.input-group .error {
+    color: #aa1e1e;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.input-group.success input {
+    border-color: green;
+}
+
+.input-group.error input {
+    border-color: red;
+}
+
+.gender-options {
+    display: flex;
+    align-items: center;
+}
+
+.gender-options input {
+    margin-right: 5px;
+}
+
+.gender-options label {
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+@media only screen and (max-width: 600px) {
+    .input-group {
+        flex-basis: 100%;
+    }
+}
